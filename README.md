@@ -29,7 +29,7 @@ As I continue to expand my digital and biological world, I invite you to join me
 #
 
 <details>
- <summary><h3>👨‍💻 Forrest's Coding Journey</h3></summary>
+ <summary><h3>👨‍💻 Dr. Hamali's Coding Journey</h3></summary>
 My interest in programming began 20 years ago with JavaScript coding for website development, evolving into a deep commitment to bioinformatics and molecular biology over the past fourteen years. With a Ph.D. in Molecular Signal Transduction from the Medical University of Vienna, I've spent more than a decade applying bioinformatics tools and conducting wet lab research. My expertise spans programming languages (R, Python, SQL), bioinformatics platforms (Bioconductor, DESeq2), and laboratory techniques (CRISPR-Cas9, NGS), enabling me to lead interdisciplinary projects that merge computational analysis with empirical research.
 I have consistently updated my skills to stay abreast of advancements in the field while mentoring junior scientists and contributing to the scientific community through publications and presentations. As a U.S. green card holder, I am well-positioned to lead and innovate in bioinformatics and molecular biology, with a keen interest in pursuing full-time bioinformatics roles and leading projects that require a blend of computational and laboratory expertise.
 
