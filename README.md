@@ -1,17 +1,44 @@
-Hello! 👋 I’m Bulut Hamali, a dedicated computational biologist with over a decade of experience in molecular biology and a deep fascination with the complexities of genomics. Below is a snapshot of my professional toolkit and interests:
+# Hi, I’m Bulut Hamalı! 👋
 
-- **Programming Proficiency**: Skilled in Python, R, and with a strong emphasis on applying these languages to solve complex biological problems.
-- **Bioinformatics Tools**: Proficient with essential tools such as BLAST, BEDTools, GATK, and SAMtools. Regular user of Bioconductor for genomic analysis.
-- **NGS Expertise**: Extensive experience in analyzing next-generation sequencing data, using pipelines such as BWA, Bowtie, and STAR for diverse studies including RNA-seq and ChIP-seq.
-- **Visualization Skills**: Adept in data visualization using ggplot in R and Matplotlib in Python, creating clear and impactful representations of complex data.
-- **Cloud Computing**: Utilize cloud platforms like AWS and Google Cloud for scalable bioinformatics workflows and data management.
-- **Containerization Tools**: Familiar with Docker and Singularity to maintain reproducible computing environments across various projects.
-- **Workflow Automation**: Use workflow management tools like Nextflow and Snakemake to streamline and automate bioinformatics processes.
-- **Scientific Communication**: Committed to clear and effective scientific communication, with experience in preparing publications and presenting at scientific conferences.
+I'm a software engineer with a background in bioinformatics, currently focused on full-stack development with the MERN stack.
 
-I am always excited to embark on new projects and collaborations that push the boundaries of what we can discover in computational biology. Feel free to reach out if you’re interested in collaborating or have questions about my work! 🚀
+---
 
-Email: bioinformaticsuniverse@gmail.com
+## 🧠 What I Bring
+- A data-driven mindset from bioinformatics research
+- Strong foundations in JavaScript, React, Node.js, and MongoDB
+- Experience building applications that solve real-world problems at the intersection of data and health
+
+---
+
+## 🛠 Tech Stack
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+
+---
+
+## 🚀 Projects
+- *Gene Expression Visualizer*  
+  React + Node.js app for plotting gene data  
+  [GitHub Repo](#) | [Live Demo](#)
+
+- *Task Tracker*  
+  MERN app with JWT authentication and role-based access  
+  [GitHub Repo](#)
+
+---
+
+## 📫 Let’s Connect
+- [LinkedIn](https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME)  
+- [Portfolio Website](https://yourwebsite.com) (optional)
+
+---
+
+> “Build software that understands data — and people.”
 
 ---
 
