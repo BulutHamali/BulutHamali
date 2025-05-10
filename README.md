@@ -1,4 +1,4 @@
-# Hi, I’m Bulut Hamalı! 👋
+# Hi, I’m Bulut Hamali! 👋
 
 I'm a software engineer with a background in bioinformatics, currently focused on full-stack development with the MERN stack.
 
