@@ -25,11 +25,11 @@ I'm a software engineer with a background in bioinformatics, currently focused o
 ## 🚀 Projects
 - *Gene Expression Visualizer*  
   React + Node.js app for plotting gene data  
-  [GitHub Repo](#) | [Live Demo](#)
+  [GitHub Repo](#) | [Live Demo](#) (in progress)
 
 - *Task Tracker*  
   MERN app with JWT authentication and role-based access  
-  [GitHub Repo](#)
+  [GitHub Repo](#) (in progress)
 
 ---
 
