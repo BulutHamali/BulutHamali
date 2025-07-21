@@ -35,7 +35,7 @@ I'm a software engineer in training with a background in bioinformatics, current
 
 ## 📫 Let’s Connect
 - [LinkedIn](linkedin/com/buluthamali)  
-- [Portfolio Website](https://yourwebsite.com) (in progress)
+- [Portfolio Website](https://buluthamali.com) (in progress)
 
 ---
 
