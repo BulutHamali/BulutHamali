@@ -1,3 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=180&section=header&text=Bulut%20Hamali&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Turning%20Biological%20Complexity%20Into%20Computational%20Clarity&descAlignY=58&descSize=16&descColor=58A6FF" width="100%"/>
+
 <div align="center">
 
 # Bulut Hamali
@@ -186,3 +188,5 @@ MERN-stack applications that surface genomic and clinical data through accessibl
 *"The most consequential code running today is the code that interprets biology."*
 
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,100:0d1117&height=120&section=footer" width="100%"/>
