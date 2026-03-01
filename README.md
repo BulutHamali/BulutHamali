@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=180&section=header&text=Bulut%20Hamali&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Turning%20Biological%20Complexity%20Into%20Computational%20Clarity&descAlignY=58&descSize=16&descColor=58A6FF" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=180&section=header" width="100%"/>
 
 <div align="center">
 
