@@ -184,10 +184,11 @@ MERN-stack applications that surface genomic and clinical data through accessibl
 
 <div align="center">
 
-[![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=BulutHamali&theme=github_dark&no-frame=true&row=1&column=7&margin-w=10)](https://github.com/ryo-ma/github-profile-trophy)
+![Profile Summary](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=BulutHamali&theme=github_dark)
 
-![Bulut's GitHub Stats](https://github-readme-stats.vercel.app/api?username=BulutHamali&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=BulutHamali&layout=compact&theme=github_dark&hide_border=true&langs_count=8)
+![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=BulutHamali&theme=github_dark)
+![Top Languages by Commit](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=BulutHamali&theme=github_dark)
+![Top Languages by Repo](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=BulutHamali&theme=github_dark)
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=BulutHamali&theme=github_dark&hide_border=true)
 
