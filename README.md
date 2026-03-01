@@ -26,6 +26,16 @@ My work sits precisely in that gap. I design and build AI-driven systems that tr
 
 ---
 
+## Currently Building
+
+| Status | Project | Focus |
+|---|---|---|
+| 🔬 Active | **ClinPilot** | Expanding the FDA Guardrail agent with real-time ClinicalTrials.gov API integration |
+| 🧬 Active | **Spatial Transcriptomics Pipeline** | Adding cell-cell communication inference via CellChat |
+| 🛠 Ongoing | **MERN Clinical Dashboard** | Building a patient-facing eligibility interface for ClinPilot |
+
+---
+
 ## Featured Projects
 
 ---
@@ -174,10 +184,14 @@ MERN-stack applications that surface genomic and clinical data through accessibl
 
 <div align="center">
 
+[![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=BulutHamali&theme=github_dark&no-frame=true&row=1&column=7&margin-w=10)](https://github.com/ryo-ma/github-profile-trophy)
+
 ![Bulut's GitHub Stats](https://github-readme-stats.vercel.app/api?username=BulutHamali&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=BulutHamali&layout=compact&theme=github_dark&hide_border=true&langs_count=8)
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=BulutHamali&theme=github_dark&hide_border=true)
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=BulutHamali&theme=github-compact&hide_border=true&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
 
