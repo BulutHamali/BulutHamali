@@ -7,7 +7,7 @@
 *PhD · Molecular Biology & Bioinformatics · Full-Stack Engineer · AI Systems Architect*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/buluthamali)
-[![Personal Website](https://img.shields.io/badge/Personal_Website-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://buluthamali.com)
+[![Personal Website](https://img.shields.io/badge/Personal_Website-000000?style=for-the-badge&logo=html5&logoColor=white)](https://buluthamali.com)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bulut@buluthamali.com)
 
 </div>
