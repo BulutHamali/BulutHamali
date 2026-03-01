@@ -166,6 +166,19 @@ MERN-stack applications that surface genomic and clinical data through accessibl
 
 ---
 
+## GitHub Stats
+
+<div align="center">
+
+![Bulut's GitHub Stats](https://github-readme-stats.vercel.app/api?username=BulutHamali&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=BulutHamali&layout=compact&theme=tokyonight&hide_border=true&langs_count=8)
+
+![GitHub Streak](https://streak-stats.demolab.com?user=BulutHamali&theme=tokyonight&hide_border=true)
+
+</div>
+
+---
+
 <div align="center">
 
 *"The most consequential code running today is the code that interprets biology."*
