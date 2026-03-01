@@ -180,6 +180,13 @@ MERN-stack applications that surface genomic and clinical data through accessibl
 
 ---
 
+## Coding Activity
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
+---
+
 ## GitHub Stats
 
 <div align="center">
