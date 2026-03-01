@@ -210,7 +210,7 @@ def generate_svg(days: list[dict], username: str) -> str:
 
     # ── Title
     p.append(f'<text x="{gx1}" y="16" class="title">'
-             f'&#x2B21; DNA CONTRIBUTION SEQUENCE &middot; @{username}'
+             f'&#x2B21; DNA CONTRIBUTION SEQUENCE &#xB7; @{username}'
              f'</text>')
 
     # ── 5′ ─── 3′ header strand label
