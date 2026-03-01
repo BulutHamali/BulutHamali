@@ -5,9 +5,9 @@
 <h3>Turning Biological Complexity Into Computational Clarity</h3>
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=PhD+%C2%B7+Molecular+Biology+%26+Bioinformatics;Multi-Agent+AI+Systems+Architect;Full-Stack+Engineer+%7C+MERN+Stack;Building+AI+that+understands+biology" alt="Typing SVG"/></a>
 <br/>
-<a href="https://www.linkedin.com/in/buluthamali"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/bulut-hamali/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="https://buluthamali.com"><img src="https://img.shields.io/badge/Personal_Website-000000?style=for-the-badge"/></a>
-<a href="mailto:bulut@buluthamali.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="mailto:info@buluthamali.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 <br/>
 <img src="https://komarev.com/ghpvc/?username=BulutHamali&style=for-the-badge&color=0A66C2&label=PROFILE+VIEWS"/>
 </div>
