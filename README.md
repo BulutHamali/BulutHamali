@@ -204,7 +204,7 @@ No activity tracked
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=BulutHamali&theme=github-compact&hide_border=true&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
-<img alt="DNA Contribution Animation" src="https://raw.githubusercontent.com/BulutHamali/BulutHamali/main/dna-sequencing.svg" width="100%"/>
+![DNA Contribution Animation](https://raw.githubusercontent.com/BulutHamali/BulutHamali/main/dna-sequencing.svg)
 
 </div>
 
