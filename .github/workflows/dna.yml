@@ -1,0 +1,38 @@
+name: Generate DNA Contribution Animation
+
+on:
+  schedule:
+    - cron: "0 1 * * *"   # runs daily at 01:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate DNA sequencing SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: BulutHamali
+          OUTPUT_FILE: dna-sequencing.svg
+        run: python scripts/dna_contribution.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add dna-sequencing.svg
+          git diff --cached --quiet || git commit -m "Update DNA contribution animation [skip ci]"
+          git push

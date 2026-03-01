@@ -204,11 +204,7 @@ No activity tracked
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=BulutHamali&theme=github-compact&hide_border=true&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BulutHamali/BulutHamali/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/BulutHamali/BulutHamali/output/github-contribution-grid-snake.svg"/>
-  <img alt="Snake animation" src="https://raw.githubusercontent.com/BulutHamali/BulutHamali/output/github-contribution-grid-snake.svg"/>
-</picture>
+<img alt="DNA Contribution Animation" src="https://raw.githubusercontent.com/BulutHamali/BulutHamali/main/dna-sequencing.svg" width="100%"/>
 
 </div>
 
