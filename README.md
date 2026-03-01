@@ -10,6 +10,8 @@
 [![Personal Website](https://img.shields.io/badge/Personal_Website-000000?style=for-the-badge)](https://buluthamali.com)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bulut@buluthamali.com)
 
+![Visitors](https://komarev.com/ghpvc/?username=BulutHamali&style=for-the-badge&color=0A66C2&label=PROFILE+VIEWS)
+
 </div>
 
 ---
