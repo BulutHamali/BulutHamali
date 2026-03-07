@@ -72,13 +72,42 @@ LLMs can summarize clinical trial eligibility criteria fluently, but they halluc
 **Solution**
 A 5-agent sequential pipeline that retrieves live trial data from ClinicalTrials.gov, cross-references PubMed literature and FDA drug labels, then audits its own outputs before returning a structured 9-section report, written simultaneously for patients, clinicians, and regulatory reviewers.
 
-| Agent | Model | Role |
-|---|---|---|
-| **Analyst** | gpt-4o-mini | Extracts top inclusion and exclusion criteria from raw eligibility text |
-| **Researcher** | gpt-4o-mini | Summarizes relevant PubMed abstracts; notes support or tension with criteria |
-| **Advocate** | gpt-4o-mini | Produces plain-language patient report (trial overview, checklists, next steps) |
-| **Auditor** | gpt-4o | Self-verification loop: grounds every criterion in verbatim source quotes; prunes unverifiable claims |
-| **Guardrail** | gpt-4o | Compliance & risk review against 21 CFR Part 312 and ICH E6; Fairness & Diversity Audit per NIH/FDA guidelines |
+<table>
+<thead>
+<tr>
+<th width="120">Agent</th>
+<th width="140">Model</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Analyst</strong></td>
+<td>gpt-4o-mini</td>
+<td>Extracts top inclusion and exclusion criteria from raw eligibility text</td>
+</tr>
+<tr>
+<td><strong>Researcher</strong></td>
+<td>gpt-4o-mini</td>
+<td>Summarizes relevant PubMed abstracts; notes support or tension with criteria</td>
+</tr>
+<tr>
+<td><strong>Advocate</strong></td>
+<td>gpt-4o-mini</td>
+<td>Produces plain-language patient report (trial overview, checklists, next steps)</td>
+</tr>
+<tr>
+<td><strong>Auditor</strong></td>
+<td>gpt-4o</td>
+<td>Self-verification loop: grounds every criterion in verbatim source quotes; prunes unverifiable claims</td>
+</tr>
+<tr>
+<td><strong>Guardrail</strong></td>
+<td>gpt-4o</td>
+<td>Compliance & risk review against 21 CFR Part 312 and ICH E6; Fairness & Diversity Audit per NIH/FDA guidelines</td>
+</tr>
+</tbody>
+</table>
 
 **Tech Stack**
 
