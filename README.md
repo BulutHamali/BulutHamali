@@ -231,7 +231,8 @@ Status:     API functional and deployed; frontend integration in progress
 | Domain | Tools & Methods |
 |---|---|
 | Single-Cell Genomics | Scanpy, Seurat, scRNA-seq clustering, trajectory inference |
-| Spatial Transcriptomics | 10x Xenium (in situ), Squidpy, spatial gene expression analysis |
+| Spatial Transcriptomics | 10x Xenium (in situ), Squidpy, Tangram, cell2location, spatial gene expression analysis |
+| Biological Foundation Models | scGPT, Geneformer, StarDist, spatial deconvolution |
 | Clinical Data Standards | CDISC SDTM/ADaM, TLF generation, admiral (R), regulatory pipelines |
 | Statistical Analysis | R/Bioconductor, differential expression, survival analysis |
 | Data Engineering | Pandas, NumPy, high-performance Python, HPC/SLURM |
@@ -240,7 +241,8 @@ Status:     API functional and deployed; frontend integration in progress
 
 | Domain | Tools & Methods |
 |---|---|
-| Multi-Agent Systems | CrewAI, custom agent graphs, deliberation frameworks |
+| Multi-Agent Systems | CrewAI, LiteLLM, Hybrid-DAG orchestration, deliberation frameworks |
+| Agentic Validation | Code-in-the-Loop verification, Biological Consistency Scoring, Pydantic schemas |
 | Retrieval-Augmented Generation | ChromaDB, vector embeddings, semantic search |
 | LLM Integration | OpenAI API (gpt-4o, gpt-4o-mini), prompt engineering |
 | Caching & Optimization | SQLite semantic cache, inference cost reduction |
