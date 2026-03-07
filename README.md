@@ -34,8 +34,6 @@ My work sits precisely in that gap. I build across the full stack of this proble
 
 ## Featured Projects
 
----
-
 ### ClinPilot — Multi-Agent Clinical Trial Orchestrator
 
 > *How do you reliably match a real patient to the right clinical trial when the eligibility criteria span 40+ pages of regulatory language?*
@@ -194,7 +192,6 @@ Status:     API functional and deployed; frontend integration in progress
 | Single-Cell Genomics | Scanpy, Seurat, scRNA-seq clustering, trajectory inference |
 | Spatial Transcriptomics | 10x Xenium (in situ), Squidpy, spatial gene expression analysis |
 | Clinical Data Standards | CDISC SDTM/ADaM, TLF generation, admiral (R), regulatory pipelines |
-| Variant Analysis | GATK, VCF filtering, cohort pipelines |
 | Statistical Analysis | R/Bioconductor, differential expression, survival analysis |
 | Data Engineering | Pandas, NumPy, high-performance Python, HPC/SLURM |
 
@@ -219,7 +216,6 @@ Status:     API functional and deployed; frontend integration in progress
 | DevOps | Git, GitHub Actions, Linux/Bash, Render, Railway |
 
 ---
-
 
 ## GitHub Stats
 
