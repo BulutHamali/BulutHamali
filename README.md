@@ -176,20 +176,6 @@ MERN-stack applications that surface genomic and clinical data through accessibl
 
 ---
 
-## Coding Activity
-
-<!--START_SECTION:waka-->
-
-```txt
-From: 27 February 2026 - To: 06 March 2026
-
-Markdown   26 mins               █████████████████████░░░░   83.67 %
-YAML       5 mins                ████░░░░░░░░░░░░░░░░░░░░░   16.33 %
-```
-
-<!--END_SECTION:waka-->
-
----
 
 ## GitHub Stats
 
