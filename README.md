@@ -24,12 +24,37 @@ My work sits precisely in that gap. I build across the full stack of this proble
 
 ## Currently Building
 
-| Status | Project | Focus |
-|---|---|---|
-| 🛠 Ongoing | **SpatioCore-Flow** | Gated multi-agent orchestrator for single-cell and spatial transcriptomics with Code-in-the-Loop hallucination prevention |
-| 🟢 Active | **ClinPilot** | Refactoring orchestration layer into a stateless FastAPI backend for multi-user support |
-| 🟢 Active | **LabTasker** | Token persistence, email deadline reminders, analytics view, and time tracking per task |
-| 🟢 Active | **CargoURL AI** | Supabase integration and live frontend connection to replace mock data with real API responses |
+<table>
+<thead>
+<tr>
+<th width="120">Status</th>
+<th width="160">Project</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🛠 Ongoing</td>
+<td><strong>SpatioCore-Flow</strong></td>
+<td>Gated multi-agent orchestrator for single-cell and spatial transcriptomics with Code-in-the-Loop hallucination prevention</td>
+</tr>
+<tr>
+<td>🟢 Active</td>
+<td><strong>ClinPilot</strong></td>
+<td>Refactoring orchestration layer into a stateless FastAPI backend for multi-user support</td>
+</tr>
+<tr>
+<td>🟢 Active</td>
+<td><strong>LabTasker</strong></td>
+<td>Token persistence, email deadline reminders, analytics view, and time tracking per task</td>
+</tr>
+<tr>
+<td>🟢 Active</td>
+<td><strong>CargoURL AI</strong></td>
+<td>Supabase integration and live frontend connection to replace mock data with real API responses</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
