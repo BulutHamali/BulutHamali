@@ -35,25 +35,25 @@ My work sits precisely in that gap. I build across the full stack of this proble
 
 ## Featured Projects
 
-### ClinPilot — Multi-Agent Clinical Trial Orchestrator
+### ClinPilot — Verification-First Multi-Agent Clinical Trial Auditor
 
 [![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BulutHamali/ClinPilot)
 
-> *How do you reliably match a real patient to the right clinical trial when the eligibility criteria span 40+ pages of regulatory language?*
+> *How do you make an LLM-generated clinical trial report trustworthy enough for a patient, a clinician, and a regulatory reviewer to act on?*
 
 **Problem**
-Clinical trial eligibility verification is time-intensive, error-prone, and bottlenecked by human reviewers who must reconcile unstructured patient records against complex inclusion/exclusion criteria. A single missed criterion can disqualify a patient or expose a site to compliance risk.
+LLMs can summarize clinical trial eligibility criteria fluently — but they hallucinate, paraphrase, and omit without flagging it. In a regulatory context, an unverified output is not just wrong, it's a liability.
 
 **Solution**
-A 5-agent LLM pipeline where each agent owns a distinct epistemic role, running in sequence with structured handoffs:
+A 5-agent sequential pipeline that retrieves live trial data from ClinicalTrials.gov, cross-references PubMed literature and FDA drug labels, then audits its own outputs before returning a structured 9-section report — written simultaneously for patients, clinicians, and regulatory reviewers.
 
-| Agent | Role |
-|---|---|
-| **Analyst** | Parses and structures patient records against trial criteria |
-| **Researcher** | Retrieves and synthesizes relevant trial criteria via RAG over ChromaDB |
-| **Advocate** | Constructs the case *for* patient eligibility |
-| **Auditor** | Reconciles agent outputs into a structured eligibility verdict |
-| **Guardrail** | Final pass for regulatory compliance and citation integrity |
+| Agent | Model | Role |
+|---|---|---|
+| **Analyst** | gpt-4o-mini | Extracts top inclusion and exclusion criteria from raw eligibility text |
+| **Researcher** | gpt-4o-mini | Summarizes relevant PubMed abstracts; notes support or tension with criteria |
+| **Advocate** | gpt-4o-mini | Produces plain-language patient report (trial overview, checklists, next steps) |
+| **Auditor** | gpt-4o | Self-verification loop — grounds every criterion in verbatim source quotes; prunes unverifiable claims |
+| **Guardrail** | gpt-4o | Compliance & risk review against 21 CFR Part 312 and ICH E6; Fairness & Diversity Audit per NIH/FDA guidelines |
 
 **Tech Stack**
 
@@ -65,10 +65,11 @@ A 5-agent LLM pipeline where each agent owns a distinct epistemic role, running 
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 
 ```
-Framework:  CrewAI multi-agent orchestration
-Pipeline:   Patient intake → RAG retrieval → Sequential agent deliberation → Guardrail verdict
-Models:     OpenAI gpt-4o / gpt-4o-mini
-Storage:    ChromaDB (vector store) · SQLite (session cache)
+Data sources:  ClinicalTrials.gov V2 API · PubMed E-utilities · FDA Drug Label API
+Verification:  Auditor self-verification loop — verbatim citation binding, unverifiable claims pruned
+Output:        9-section progressive-disclosure report + downloadable PDF certificate
+Caching:       SQLite (audit cache by NCT ID) · ChromaDB (past audit retrieval)
+Models:        gpt-4o-mini (extraction/summarization) · gpt-4o (verification/compliance)
 ```
 
 ---
