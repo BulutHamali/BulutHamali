@@ -26,9 +26,9 @@ My work sits precisely in that gap. I design and build AI-driven systems that tr
 
 | Status | Project | Focus |
 |---|---|---|
-| 🛠 Ongoing | **ClinPilot** | Expanding the FDA Guardrail agent with real-time ClinicalTrials.gov API integration |
-| 🛠 Ongoing | **Spatial Transcriptomics Pipeline** | Adding cell-cell communication inference via CellChat |
-| 🛠 Ongoing | **MERN Clinical Dashboard** | Building a patient-facing eligibility interface for ClinPilot |
+| 🛠 Ongoing | **ClinPilot** | Expanding the Guardrail agent with real-time ClinicalTrials.gov API integration |
+| 🛠 Ongoing | **LabTasker** | Token persistence, email deadline reminders, analytics view, and time tracking per task |
+| 🛠 Ongoing | **CargoURL AI** | Supabase integration and live frontend connection to replace mock data with real API responses |
 
 ---
 
