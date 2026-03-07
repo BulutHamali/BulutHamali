@@ -115,6 +115,8 @@ Storage:       PostgreSQL (audit trail) · ChromaDB (RAG) · Redis (cache)
 
 #### scRNA-seq Analysis — Gastric Cancer Cell Atlas
 
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BulutHamali/scRNAseq-Pipeline-GastricCancer)
+
 **Problem**
 Gastric cancer subtypes are clinically heterogeneous, and bulk profiling fails to resolve the malignant, immune, and fibroblast populations driving treatment resistance.
 
@@ -131,6 +133,8 @@ Single-cell RNA-seq pipeline from raw count matrices through clustering, cell-ty
 
 #### Spatial Transcriptomics — Breast Cancer Tumor Microenvironment (Xenium)
 
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BulutHamali/xenium-analysis-clean)
+
 **Problem**
 Standard scRNA-seq dissolves tissue architecture — you lose the spatial organization of tumor, immune, and stromal compartments that determines how cancer progresses and resists treatment.
 
@@ -146,6 +150,8 @@ End-to-end spatial transcriptomics pipeline on a 10x Xenium in situ dataset from
 ---
 
 #### SDTM/ADaM Clinical Data Pipeline
+
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BulutHamali/sdtm-adam-pipeline)
 
 **Problem**
 Regulatory submissions to the FDA and EMA require clinical trial data in CDISC-standard formats. Transforming raw trial datasets into analysis-ready ADaM structures — and from there into auditable TLF outputs — demands both statistical rigor and deep familiarity with submission standards.
@@ -168,6 +174,9 @@ Pipeline:   Modular R scripts · run_all.R single-command execution
 ---
 
 ### LabTasker — Research Lab Task Manager
+
+[![GitHub Frontend](https://img.shields.io/badge/GitHub-Frontend-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BulutHamali/labtasker-frontend)
+[![GitHub Backend](https://img.shields.io/badge/GitHub-Backend-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BulutHamali/labtasker-backend)
 
 > *Research workflows don't fit generic project managers — they need Kanban boards that understand experiments, not sprints.*
 
@@ -199,6 +208,8 @@ Live demo:  https://labtasker-frontend.onrender.com
 ---
 
 ### CargoURL AI — Click Analytics & Optimization API
+
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BulutHamali/cargourl-ai)
 
 > *A link management platform needs more than redirect counts — it needs to tell you when to post, who's clicking, and whether the numbers are moving.*
 
