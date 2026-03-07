@@ -72,6 +72,32 @@ Storage:    ChromaDB (vector store) · SQLite (session cache)
 
 ---
 
+### CargoURL AI — Click Analytics & Optimization API
+
+> *A link management platform needs more than redirect counts — it needs to tell you when to post, who's clicking, and whether the numbers are moving.*
+
+**Problem**
+Raw click data from a URL shortener is noise without context. Posting time, audience composition, and CTR deltas require time-series forecasting and segmentation — not just counting.
+
+**Solution**
+A Flask REST API that turns raw click event streams into optimization signals: high-engagement posting window prediction via Prophet, audience segmentation via KMeans clustering, and CTR delta reporting. Built as the analytics and AI backend for [CargoURL](https://cargourl.com).
+
+**Tech Stack**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![Prophet](https://img.shields.io/badge/Prophet-0467DF?style=flat-square&logo=meta&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+
+```
+Pipeline:   Click events → Prophet forecasting → KMeans segmentation → CTR delta
+Deployment: Railway / Render (Nixpacks)
+Status:     API functional and deployed; frontend integration in progress
+```
+
+---
+
 ### Bioinformatics Research Portfolio
 
 #### scRNA-seq Analysis — Gastric Cancer Cell Atlas
@@ -90,21 +116,72 @@ Single-cell RNA-seq pipeline from raw count matrices through clustering, cell-ty
 
 ---
 
-### Full-Stack Engineering
+#### Spatial Transcriptomics — Breast Cancer Tumor Microenvironment (Xenium)
 
 **Problem**
-Biological insights trapped in notebooks and scripts are invisible to clinicians, collaborators, and stakeholders who need them most.
+Standard scRNA-seq dissolves tissue architecture — you lose the spatial organization of tumor, immune, and stromal compartments that determines how cancer progresses and resists treatment.
 
 **Solution**
-MERN-stack applications that surface genomic and clinical data through accessible, authenticated interfaces — from gene expression visualizers to role-based clinical dashboards with RESTful APIs and JWT-secured endpoints.
+End-to-end spatial transcriptomics pipeline on a 10x Xenium in situ dataset from a human breast cancer FFPE section: cell type mapping, spatially-resolved gene expression patterns, and tissue architecture characterization at single-cell resolution.
 
 **Tech Stack**
 
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Squidpy](https://img.shields.io/badge/Squidpy-FF9B00?style=flat-square&logoColor=white)
+![Scanpy](https://img.shields.io/badge/Scanpy-3B4CC0?style=flat-square&logoColor=white)
+
+---
+
+#### SDTM/ADaM Clinical Data Pipeline
+
+**Problem**
+Regulatory submissions to the FDA and EMA require clinical trial data in CDISC-standard formats. Transforming raw trial datasets into analysis-ready ADaM structures — and from there into auditable TLF outputs — demands both statistical rigor and deep familiarity with submission standards.
+
+**Solution**
+End-to-end clinical data pipeline from SDTM source datasets (DM, AE, LB) through ADaM derivation (ADSL subject-level, ADAE adverse events) to regulatory-grade tables, listings, and figures. Fully automated via a single `run_all.R` entry point.
+
+**Tech Stack**
+
+![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
+![admiral](https://img.shields.io/badge/admiral-2C2D72?style=flat-square&logoColor=white)
+![Bioconductor](https://img.shields.io/badge/Bioconductor-2A6EBB?style=flat-square&logoColor=white)
+
+```
+Standards:  CDISC SDTM → ADaM (ADSL, ADAE)
+Outputs:    AE summary tables, demographics TLFs, treatment-emergent AE flags
+Pipeline:   Modular R scripts · run_all.R single-command execution
+```
+
+---
+
+### LabTasker — Research Lab Task Manager
+
+> *Research workflows don't fit generic project managers — they need Kanban boards that understand experiments, not sprints.*
+
+**Problem**
+Lab teams lose track of experiments, deadlines, and task ownership across spreadsheets and email threads. Generic project tools lack the domain-specific structure that research workflows require.
+
+**Solution**
+Full-stack research task management application with a drag-and-drop Kanban board (To Do / In Progress / Done), per-project progress tracking, and JWT-authenticated user accounts. Frontend deployed on Render with a live demo.
+
+**Frontend**
+
+![React](https://img.shields.io/badge/React_18-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+
+**Backend**
+
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Express](https://img.shields.io/badge/Express_5-000000?style=flat-square&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB_Atlas-47A248?style=flat-square&logo=mongodb&logoColor=white)
+
+```
+Auth:       JWT · bcrypt · protected routes
+Features:   Drag-and-drop reorder, due dates, progress bars, per-user scoping
+Live demo:  https://labtasker-frontend.onrender.com
+```
 
 ---
 
@@ -115,8 +192,9 @@ MERN-stack applications that surface genomic and clinical data through accessibl
 | Domain | Tools & Methods |
 |---|---|
 | Single-Cell Genomics | Scanpy, Seurat, scRNA-seq clustering, trajectory inference |
-| Spatial Transcriptomics | 10x Visium, Squidpy, spatially-variable gene analysis |
-| Variant Analysis | GATK, INDEL detection, VCF filtering, cohort pipelines |
+| Spatial Transcriptomics | 10x Xenium (in situ), Squidpy, spatial gene expression analysis |
+| Clinical Data Standards | CDISC SDTM/ADaM, TLF generation, admiral (R), regulatory pipelines |
+| Variant Analysis | GATK, VCF filtering, cohort pipelines |
 | Statistical Analysis | R/Bioconductor, differential expression, survival analysis |
 | Data Engineering | Pandas, NumPy, high-performance Python, HPC/SLURM |
 
@@ -134,11 +212,11 @@ MERN-stack applications that surface genomic and clinical data through accessibl
 
 | Domain | Tools & Methods |
 |---|---|
-| Frontend | React, JavaScript (ES6+), responsive UI |
-| Backend | Node.js, Express, RESTful API design |
-| Database | MongoDB, SQLite, data modeling |
-| Auth & Security | JWT, role-based access control |
-| DevOps | Git, GitHub Actions, Linux/Bash, Docker |
+| Frontend | React 18, TypeScript, Tailwind CSS, shadcn/ui, Vite |
+| Backend | Node.js, Express, Flask, RESTful API design |
+| Database | MongoDB Atlas, SQLite, data modeling |
+| Auth & Security | JWT, bcrypt, role-based access control |
+| DevOps | Git, GitHub Actions, Linux/Bash, Render, Railway |
 
 ---
 
