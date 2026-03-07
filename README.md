@@ -27,7 +27,7 @@ My work sits precisely in that gap. I build across the full stack of this proble
 | Status | Project | Focus |
 |---|---|---|
 | 🛠 Ongoing | **SpatioCore-Flow** | Gated multi-agent orchestrator for single-cell and spatial transcriptomics with Code-in-the-Loop hallucination prevention |
-| 🟢 Active | **ClinPilot** | Expanding the Guardrail agent with real-time ClinicalTrials.gov API integration |
+| 🟢 Active | **ClinPilot** | Refactoring orchestration layer into a stateless FastAPI backend for multi-user support |
 | 🟢 Active | **LabTasker** | Token persistence, email deadline reminders, analytics view, and time tracking per task |
 | 🟢 Active | **CargoURL AI** | Supabase integration and live frontend connection to replace mock data with real API responses |
 
