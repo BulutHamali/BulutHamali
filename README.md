@@ -74,23 +74,6 @@ Storage:    ChromaDB (vector store) · SQLite (session cache)
 
 ### Bioinformatics Research Portfolio
 
-#### Spatial Transcriptomics — Colon Cancer Tumor Microenvironment
-
-**Problem**
-Bulk RNA-seq averages over all cells in a tissue, obscuring the spatial organization of tumor, immune, and stromal compartments critical to understanding cancer progression.
-
-**Solution**
-End-to-end spatial transcriptomics pipeline processing 10x Visium data: spot deconvolution, spatially-variable gene detection, and ligand-receptor interaction mapping to characterize the colon cancer tumor microenvironment at tissue resolution.
-
-**Tech Stack**
-
-![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Seurat](https://img.shields.io/badge/Seurat-2C2D72?style=flat-square&logoColor=white)
-![Squidpy](https://img.shields.io/badge/Squidpy-FF9B00?style=flat-square&logoColor=white)
-
----
-
 #### scRNA-seq Analysis — Gastric Cancer Cell Atlas
 
 **Problem**
@@ -104,23 +87,6 @@ Single-cell RNA-seq pipeline from raw count matrices through clustering, cell-ty
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Scanpy](https://img.shields.io/badge/Scanpy-3B4CC0?style=flat-square&logoColor=white)
 ![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
-
----
-
-#### GATK Variant Calling — INDELseek
-
-**Problem**
-Standard short-read variant callers under-perform on insertion/deletion detection in low-coverage or complex genomic regions, producing false-negative calls that matter clinically.
-
-**Solution**
-High-performance Python implementation of a targeted INDEL detection pipeline built on GATK best-practices, with custom filtering logic and optimized I/O for large cohort processing.
-
-**Tech Stack**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![GATK](https://img.shields.io/badge/GATK-E63946?style=flat-square&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![Bioconductor](https://img.shields.io/badge/Bioconductor-2A6EBB?style=flat-square&logoColor=white)
 
 ---
 
