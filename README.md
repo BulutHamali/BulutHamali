@@ -16,9 +16,9 @@
 
 ## The Mission
 
-The gap between raw genomic data and actionable clinical insight is vast — and mostly unautomated.
+The gap between raw biological data and actionable clinical insight is vast — and mostly unautomated.
 
-My work sits precisely in that gap. I design and build AI-driven systems that transform high-dimensional biological data (single-cell transcriptomics, variant calls, clinical trial criteria) into structured, auditable intelligence. Whether that means orchestrating a multi-agent LLM pipeline to verify patient eligibility or engineering a high-performance variant detection tool in Python, the goal is the same: **make the biology computable and the computation trustworthy**.
+My work sits precisely in that gap. I build across the full stack of this problem: multi-agent AI pipelines that reason over clinical trial criteria, spatial and single-cell transcriptomics analyses that map tumor microenvironments at cellular resolution, regulatory-grade clinical data pipelines built to CDISC standards, and full-stack applications that surface these insights to the people who need them. The goal is always the same: **make the biology computable and the computation trustworthy**.
 
 ---
 
