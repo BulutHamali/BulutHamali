@@ -72,32 +72,6 @@ Storage:    ChromaDB (vector store) · SQLite (session cache)
 
 ---
 
-### CargoURL AI — Click Analytics & Optimization API
-
-> *A link management platform needs more than redirect counts — it needs to tell you when to post, who's clicking, and whether the numbers are moving.*
-
-**Problem**
-Raw click data from a URL shortener is noise without context. Posting time, audience composition, and CTR deltas require time-series forecasting and segmentation — not just counting.
-
-**Solution**
-A Flask REST API that turns raw click event streams into optimization signals: high-engagement posting window prediction via Prophet, audience segmentation via KMeans clustering, and CTR delta reporting. Built as the analytics and AI backend for [CargoURL](https://cargourl.com).
-
-**Tech Stack**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![Prophet](https://img.shields.io/badge/Prophet-0467DF?style=flat-square&logo=meta&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-
-```
-Pipeline:   Click events → Prophet forecasting → KMeans segmentation → CTR delta
-Deployment: Railway / Render (Nixpacks)
-Status:     API functional and deployed; frontend integration in progress
-```
-
----
-
 ### Bioinformatics Research Portfolio
 
 #### scRNA-seq Analysis — Gastric Cancer Cell Atlas
@@ -181,6 +155,32 @@ Full-stack research task management application with a drag-and-drop Kanban boar
 Auth:       JWT · bcrypt · protected routes
 Features:   Drag-and-drop reorder, due dates, progress bars, per-user scoping
 Live demo:  https://labtasker-frontend.onrender.com
+```
+
+---
+
+### CargoURL AI — Click Analytics & Optimization API
+
+> *A link management platform needs more than redirect counts — it needs to tell you when to post, who's clicking, and whether the numbers are moving.*
+
+**Problem**
+Raw click data from a URL shortener is noise without context. Posting time, audience composition, and CTR deltas require time-series forecasting and segmentation — not just counting.
+
+**Solution**
+A Flask REST API that turns raw click event streams into optimization signals: high-engagement posting window prediction via Prophet, audience segmentation via KMeans clustering, and CTR delta reporting. Built as the analytics and AI backend for [CargoURL](https://cargourl.com).
+
+**Tech Stack**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![Prophet](https://img.shields.io/badge/Prophet-0467DF?style=flat-square&logo=meta&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+
+```
+Pipeline:   Click events → Prophet forecasting → KMeans segmentation → CTR delta
+Deployment: Railway / Render (Nixpacks)
+Status:     API functional and deployed; frontend integration in progress
 ```
 
 ---
