@@ -71,6 +71,46 @@ Storage:    ChromaDB (vector store) · SQLite (session cache)
 
 ---
 
+### SpatioCore-Flow — Gated Multi-Agent Biological Orchestrator
+
+> *What if an AI system could analyze a tumor's spatial architecture without hallucinating biology it never actually saw in the data?*
+
+**Problem**
+LLM-based bioinformatics tools fail silently — they reason over biological data but have no mechanism to verify their own inferences against the underlying genomics. In a clinical or research context, an undetected hallucination in a spatial deconvolution or cell-type annotation is not a minor error.
+
+**Solution**
+A production-grade multi-agent framework for autonomous Single-Cell Genomics and Spatial Transcriptomics analysis built on a Verification-First architecture. Every AI-generated inference is programmatically validated against raw AnnData/Squidpy objects through a **Code-in-the-Loop** gate before propagation — if the Biological Consistency Score drops below 0.8, the inference is rejected and the agent reruns with constraint adjustments.
+
+| Agent | Role |
+|---|---|
+| **Curator** | Maps raw input to the correct biological coordinate system (dissociated vs. in-situ) |
+| **Analyst** | Executes foundation models (scGPT, Geneformer, Tangram, cell2location) for deconvolution and ST prediction |
+| **Validator** | Code-driven verification of Analyst claims against source data |
+| **Synthesizer** | Merges "What" (RNA) with "Where" (Spatial) into a tumor microenvironment graph |
+| **Auditor** | Source-to-bit traceability linking every claim to a gene index or pixel coordinate |
+| **Guardrail** | Evaluates outputs against FDA/SaMD risk frameworks and clinical literature |
+
+**Tech Stack**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![CrewAI](https://img.shields.io/badge/CrewAI-000000?style=flat-square&logoColor=white)
+![LiteLLM](https://img.shields.io/badge/LiteLLM-1C3C3C?style=flat-square&logoColor=white)
+![Scanpy](https://img.shields.io/badge/Scanpy-3B4CC0?style=flat-square&logoColor=white)
+![Squidpy](https://img.shields.io/badge/Squidpy-FF9B00?style=flat-square&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B35?style=flat-square&logoColor=white)
+
+```
+Architecture:  Hybrid DAG orchestration · Sandbox-Gate pattern
+Validation:    Code-in-the-Loop · Biological Consistency Score (BCS ≥ 0.8)
+Models:        scGPT · Geneformer · Tangram · cell2location · StarDist
+Storage:       PostgreSQL (audit trail) · ChromaDB (RAG) · Redis (cache)
+```
+
+---
+
 ### Bioinformatics Research Portfolio
 
 #### scRNA-seq Analysis — Gastric Cancer Cell Atlas
