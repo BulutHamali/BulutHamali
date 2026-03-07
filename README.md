@@ -16,7 +16,7 @@
 
 ## The Mission
 
-The gap between raw biological data and actionable clinical insight is vast — and mostly unautomated.
+The gap between raw biological data and actionable clinical insight is vast, and mostly unautomated.
 
 My work sits precisely in that gap. I build across the full stack of this problem: multi-agent AI pipelines that reason over clinical trial criteria, spatial and single-cell transcriptomics analyses that map tumor microenvironments at cellular resolution, regulatory-grade clinical data pipelines built to CDISC standards, and full-stack applications that surface these insights to the people who need them. The goal is always the same: **make the biology computable and the computation trustworthy**.
 
@@ -35,24 +35,24 @@ My work sits precisely in that gap. I build across the full stack of this proble
 
 ## Featured Projects
 
-### ClinPilot — Verification-First Multi-Agent Clinical Trial Auditor
+### ClinPilot: Verification-First Multi-Agent Clinical Trial Auditor
 
 [![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BulutHamali/ClinPilot)
 
 > *How do you make an LLM-generated clinical trial report trustworthy enough for a patient, a clinician, and a regulatory reviewer to act on?*
 
 **Problem**
-LLMs can summarize clinical trial eligibility criteria fluently — but they hallucinate, paraphrase, and omit without flagging it. In a regulatory context, an unverified output is not just wrong, it's a liability.
+LLMs can summarize clinical trial eligibility criteria fluently, but they hallucinate, paraphrase, and omit without flagging it. In a regulatory context, an unverified output is not just wrong, it's a liability.
 
 **Solution**
-A 5-agent sequential pipeline that retrieves live trial data from ClinicalTrials.gov, cross-references PubMed literature and FDA drug labels, then audits its own outputs before returning a structured 9-section report — written simultaneously for patients, clinicians, and regulatory reviewers.
+A 5-agent sequential pipeline that retrieves live trial data from ClinicalTrials.gov, cross-references PubMed literature and FDA drug labels, then audits its own outputs before returning a structured 9-section report, written simultaneously for patients, clinicians, and regulatory reviewers.
 
 | Agent | Model | Role |
 |---|---|---|
 | **Analyst** | gpt-4o-mini | Extracts top inclusion and exclusion criteria from raw eligibility text |
 | **Researcher** | gpt-4o-mini | Summarizes relevant PubMed abstracts; notes support or tension with criteria |
 | **Advocate** | gpt-4o-mini | Produces plain-language patient report (trial overview, checklists, next steps) |
-| **Auditor** | gpt-4o | Self-verification loop — grounds every criterion in verbatim source quotes; prunes unverifiable claims |
+| **Auditor** | gpt-4o | Self-verification loop: grounds every criterion in verbatim source quotes; prunes unverifiable claims |
 | **Guardrail** | gpt-4o | Compliance & risk review against 21 CFR Part 312 and ICH E6; Fairness & Diversity Audit per NIH/FDA guidelines |
 
 **Tech Stack**
@@ -66,7 +66,7 @@ A 5-agent sequential pipeline that retrieves live trial data from ClinicalTrials
 
 ```
 Data sources:  ClinicalTrials.gov V2 API · PubMed E-utilities · FDA Drug Label API
-Verification:  Auditor self-verification loop — verbatim citation binding, unverifiable claims pruned
+Verification:  Auditor self-verification loop: verbatim citation binding, unverifiable claims pruned
 Output:        9-section progressive-disclosure report + downloadable PDF certificate
 Caching:       SQLite (audit cache by NCT ID) · ChromaDB (past audit retrieval)
 Models:        gpt-4o-mini (extraction/summarization) · gpt-4o (verification/compliance)
@@ -74,15 +74,15 @@ Models:        gpt-4o-mini (extraction/summarization) · gpt-4o (verification/co
 
 ---
 
-### SpatioCore-Flow — Gated Multi-Agent Biological Orchestrator
+### SpatioCore-Flow: Gated Multi-Agent Biological Orchestrator
 
 > *What if an AI system could analyze a tumor's spatial architecture without hallucinating biology it never actually saw in the data?*
 
 **Problem**
-LLM-based bioinformatics tools fail silently — they reason over biological data but have no mechanism to verify their own inferences against the underlying genomics. In a clinical or research context, an undetected hallucination in a spatial deconvolution or cell-type annotation is not a minor error.
+LLM-based bioinformatics tools fail silently: they reason over biological data but have no mechanism to verify their own inferences against the underlying genomics. In a clinical or research context, an undetected hallucination in a spatial deconvolution or cell-type annotation is not a minor error.
 
 **Solution**
-A production-grade multi-agent framework for autonomous Single-Cell Genomics and Spatial Transcriptomics analysis built on a Verification-First architecture. Every AI-generated inference is programmatically validated against raw AnnData/Squidpy objects through a **Code-in-the-Loop** gate before propagation — if the Biological Consistency Score drops below 0.8, the inference is rejected and the agent reruns with constraint adjustments.
+A production-grade multi-agent framework for autonomous Single-Cell Genomics and Spatial Transcriptomics analysis built on a Verification-First architecture. Every AI-generated inference is programmatically validated against raw AnnData/Squidpy objects through a **Code-in-the-Loop** gate before propagation: if the Biological Consistency Score drops below 0.8, the inference is rejected and the agent reruns with constraint adjustments.
 
 | Agent | Role |
 |---|---|
@@ -116,7 +116,7 @@ Storage:       PostgreSQL (audit trail) · ChromaDB (RAG) · Redis (cache)
 
 ### Bioinformatics Research Portfolio
 
-#### scRNA-seq Analysis — Gastric Cancer Cell Atlas
+#### scRNA-seq Analysis: Gastric Cancer Cell Atlas
 
 [![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BulutHamali/scRNAseq-Pipeline-GastricCancer)
 
@@ -124,7 +124,7 @@ Storage:       PostgreSQL (audit trail) · ChromaDB (RAG) · Redis (cache)
 Gastric cancer subtypes are clinically heterogeneous, and bulk profiling fails to resolve the malignant, immune, and fibroblast populations driving treatment resistance.
 
 **Solution**
-Single-cell RNA-seq pipeline from raw count matrices through clustering, cell-type annotation, differential expression, and trajectory inference — reconstructing the cellular landscape of gastric tumor samples.
+Single-cell RNA-seq pipeline from raw count matrices through clustering, cell-type annotation, differential expression, and trajectory inference, reconstructing the cellular landscape of gastric tumor samples.
 
 **Tech Stack**
 
@@ -134,12 +134,12 @@ Single-cell RNA-seq pipeline from raw count matrices through clustering, cell-ty
 
 ---
 
-#### Spatial Transcriptomics — Breast Cancer Tumor Microenvironment (Xenium)
+#### Spatial Transcriptomics: Breast Cancer Tumor Microenvironment (Xenium)
 
 [![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BulutHamali/xenium-analysis-clean)
 
 **Problem**
-Standard scRNA-seq dissolves tissue architecture — you lose the spatial organization of tumor, immune, and stromal compartments that determines how cancer progresses and resists treatment.
+Standard scRNA-seq dissolves tissue architecture: you lose the spatial organization of tumor, immune, and stromal compartments that determines how cancer progresses and resists treatment.
 
 **Solution**
 End-to-end spatial transcriptomics pipeline on a 10x Xenium in situ dataset from a human breast cancer FFPE section: cell type mapping, spatially-resolved gene expression patterns, and tissue architecture characterization at single-cell resolution.
@@ -157,7 +157,7 @@ End-to-end spatial transcriptomics pipeline on a 10x Xenium in situ dataset from
 [![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BulutHamali/sdtm-adam-pipeline)
 
 **Problem**
-Regulatory submissions to the FDA and EMA require clinical trial data in CDISC-standard formats. Transforming raw trial datasets into analysis-ready ADaM structures — and from there into auditable TLF outputs — demands both statistical rigor and deep familiarity with submission standards.
+Regulatory submissions to the FDA and EMA require clinical trial data in CDISC-standard formats. Transforming raw trial datasets into analysis-ready ADaM structures, and from there into auditable TLF outputs, demands both statistical rigor and deep familiarity with submission standards.
 
 **Solution**
 End-to-end clinical data pipeline from SDTM source datasets (DM, AE, LB) through ADaM derivation (ADSL subject-level, ADAE adverse events) to regulatory-grade tables, listings, and figures. Fully automated via a single `run_all.R` entry point.
@@ -176,12 +176,12 @@ Pipeline:   Modular R scripts · run_all.R single-command execution
 
 ---
 
-### LabTasker — Research Lab Task Manager
+### LabTasker: Research Lab Task Manager
 
 [![GitHub Frontend](https://img.shields.io/badge/GitHub-Frontend-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BulutHamali/labtasker-frontend)
 [![GitHub Backend](https://img.shields.io/badge/GitHub-Backend-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BulutHamali/labtasker-backend)
 
-> *Research workflows don't fit generic project managers — they need Kanban boards that understand experiments, not sprints.*
+> *Research workflows don't fit generic project managers: they need Kanban boards that understand experiments, not sprints.*
 
 **Problem**
 Lab teams lose track of experiments, deadlines, and task ownership across spreadsheets and email threads. Generic project tools lack the domain-specific structure that research workflows require.
@@ -210,14 +210,14 @@ Live demo:  https://labtasker-frontend.onrender.com
 
 ---
 
-### CargoURL AI — Click Analytics & Optimization API
+### CargoURL AI: Click Analytics & Optimization API
 
 [![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BulutHamali/cargourl-ai)
 
-> *A link management platform needs more than redirect counts — it needs to tell you when to post, who's clicking, and whether the numbers are moving.*
+> *A link management platform needs more than redirect counts: it needs to tell you when to post, who's clicking, and whether the numbers are moving.*
 
 **Problem**
-Raw click data from a URL shortener is noise without context. Posting time, audience composition, and CTR deltas require time-series forecasting and segmentation — not just counting.
+Raw click data from a URL shortener is noise without context. Posting time, audience composition, and CTR deltas require time-series forecasting and segmentation, not just counting.
 
 **Solution**
 A Flask REST API that turns raw click event streams into optimization signals: high-engagement posting window prediction via Prophet, audience segmentation via KMeans clustering, and CTR delta reporting. Built as the analytics and AI backend for [CargoURL](https://cargourl.com).
