@@ -48,26 +48,26 @@ A 5-agent LLM pipeline where each agent owns a distinct epistemic role, running 
 
 | Agent | Role |
 |---|---|
-| **Researcher** | Retrieves and parses relevant trial criteria via RAG over ChromaDB |
+| **Analyst** | Parses and structures patient records against trial criteria |
+| **Researcher** | Retrieves and synthesizes relevant trial criteria via RAG over ChromaDB |
 | **Advocate** | Constructs the case *for* patient eligibility |
-| **Critic** | Constructs the case *against*, stress-testing edge cases |
-| **Auditor** | Reconciles the Advocate/Critic debate into a structured verdict |
-| **FDA Guardrail** | Final pass for regulatory compliance and citation integrity |
-
-The **Granville Strategy** underpins performance: a SQLite-based semantic caching layer intercepts repeated or near-duplicate queries before they reach the LLM, reducing latency and inference cost by short-circuiting redundant reasoning chains.
+| **Auditor** | Reconciles agent outputs into a structured eligibility verdict |
+| **Guardrail** | Final pass for regulatory compliance and citation integrity |
 
 **Tech Stack**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Llama](https://img.shields.io/badge/Llama_3.3_70B-0467DF?style=flat-square&logo=meta&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![CrewAI](https://img.shields.io/badge/CrewAI-000000?style=flat-square&logoColor=white)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B35?style=flat-square&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 
 ```
-Architecture: RAG → Multi-Agent Deliberation → Regulatory Guardrail → Cached Response
-Caching:      Granville Strategy (SQLite semantic cache) — reduces redundant LLM calls
-Model:        Llama 3.3 70B (instruction-tuned) via local inference
+Framework:  CrewAI multi-agent orchestration
+Pipeline:   Patient intake → RAG retrieval → Sequential agent deliberation → Guardrail verdict
+Models:     OpenAI gpt-4o / gpt-4o-mini
+Storage:    ChromaDB (vector store) · SQLite (session cache)
 ```
 
 ---
@@ -158,10 +158,10 @@ MERN-stack applications that surface genomic and clinical data through accessibl
 
 | Domain | Tools & Methods |
 |---|---|
-| Multi-Agent Systems | LangChain, custom agent graphs, deliberation frameworks |
+| Multi-Agent Systems | CrewAI, custom agent graphs, deliberation frameworks |
 | Retrieval-Augmented Generation | ChromaDB, vector embeddings, semantic search |
-| LLM Integration | Llama 3.3 70B, OpenAI API, prompt engineering |
-| Caching & Optimization | SQLite semantic cache (Granville Strategy), inference cost reduction |
+| LLM Integration | OpenAI API (gpt-4o, gpt-4o-mini), prompt engineering |
+| Caching & Optimization | SQLite semantic cache, inference cost reduction |
 | Regulatory AI | FDA-aware guardrail agents, citation integrity, audit trails |
 
 ### Full-Stack Engineering
