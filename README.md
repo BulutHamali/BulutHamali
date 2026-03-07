@@ -37,6 +37,8 @@ My work sits precisely in that gap. I build across the full stack of this proble
 
 ### ClinPilot — Multi-Agent Clinical Trial Orchestrator
 
+[![GitHub](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/BulutHamali/ClinPilot)
+
 > *How do you reliably match a real patient to the right clinical trial when the eligibility criteria span 40+ pages of regulatory language?*
 
 **Problem**
